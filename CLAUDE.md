@@ -12,7 +12,7 @@ Planned structure: the project is at its start; the paths below are the agreed l
 - Low-end device build: `flutter build apk --release`
 
 ## Architecture
-- One feature per folder: lib/features/<name>/{bloc,data,ui}/
+- One feature per folder: `lib/features/<name>/{bloc,data,ui}/`
 - Blocs never call the network; they call a repository in data/.
 - Colors and spacing come from lib/core/theme.dart. No hardcoded values.
 
@@ -30,4 +30,3 @@ Planned structure: the project is at its start; the paths below are the agreed l
 - `flutter analyze` and `flutter test` pass.
 - Every new Bloc has a bloc_test covering loading, success and offline failure.
 - Test data comes from test/fixtures/ with fake students only.
-```
