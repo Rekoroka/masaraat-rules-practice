@@ -26,7 +26,6 @@ Planned structure: the project is at its start; the paths below are the agreed l
 - Mobile data drops often: every network call needs a timeout and an offline state.
 - Target phones are low-end Android: use const widgets and ListView.builder.
 - Most users are under 18: never log or store names, emails or phone numbers.
-
 ## Before saying a task is done
 - `flutter analyze` and `flutter test` pass.
 - Every new Bloc has a bloc_test covering loading, success and offline failure.
