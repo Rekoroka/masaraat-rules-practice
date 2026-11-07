@@ -1,4 +1,5 @@
 # Masaraat adaptive practice app (Flutter)
+Planned structure: the project is at its start; the paths below are the agreed layout.
 
 ## Versions
 - Flutter 3.47.9 stable, Dart 3.13.7. Do not use APIs newer than these.
