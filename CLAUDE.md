@@ -1,4 +1,5 @@
 # Masaraat adaptive practice app (Flutter)
+
 Planned structure: the project is at its start; the paths below are the agreed layout.
 
 ## Versions
@@ -14,7 +15,8 @@ Planned structure: the project is at its start; the paths below are the agreed l
 ## Architecture
 - One feature per folder: `lib/features/<name>/{bloc,data,ui}/`
 - Blocs never call the network; they call a repository in data/.
-- Colors and spacing come from lib/core/theme.dart. No hardcoded values.
+- Local storage: drift, used only inside the repository, never inside a Bloc.
+- Colors and spacing come from `lib/core/theme.dart`. No hardcoded values.
 
 ## Conventions that differ from defaults
 - All UI text is Arabic, from l10n files. No hardcoded strings.
@@ -26,7 +28,8 @@ Planned structure: the project is at its start; the paths below are the agreed l
 - Mobile data drops often: every network call needs a timeout and an offline state.
 - Target phones are low-end Android: use const widgets and ListView.builder.
 - Most users are under 18: never log or store names, emails or phone numbers.
+
 ## Before saying a task is done
 - `flutter analyze` and `flutter test` pass.
 - Every new Bloc has a bloc_test covering loading, success and offline failure.
-- Test data comes from test/fixtures/ with fake students only.
+- Test data comes from `test/fixtures/` with fake students only.
